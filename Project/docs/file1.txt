@@ -1,0 +1,3 @@
+Benefits of Automation
+Saves time and effort compared to manually creating each folder and file.
+ Minimizes human errors such as typos or missed files that can occur during manual setup.
