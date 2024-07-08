@@ -2,15 +2,19 @@
 
 ## Overview
 
-This script automates the creation of a nested folder structure and populates them with dummy data.
+This Node.js script automates the creation of a nested folder structure and populates them with files and dummy data based on a JSON configuration file (`folderStructure.json`).
 
 ## Script Functionality
 
-The `createFolders.js` script performs the following tasks:
+The `createDynamicfolder.js` script performs the following tasks:
 
-- Checks if the parent folder named "Project" exists. If not, it creates this folder.
-- Creates subfolders named "src", "docs", and "tests" inside the "Project" folder.
-- Generates text files (`file1.txt`, `file2.txt`, `file3.txt`) inside each subfolder, containing sample content.
+- Reads the folder structure configuration from `folderStructure.json` located in the same directory.
+  
+- Creates a parent folder as specified in `folderStructure.json` in the current working directory (if it doesn't exist).
+  
+- Dynamically creates subfolders and files inside the parent folder according to the structure defined in `folderStructure.json`.
+  
+- Outputs messages to the console indicating folder and file creation statuses.
 
 ## Benefits
 
@@ -31,9 +35,10 @@ Ensure you have Node.js installed on your machine.
 
 2. Open your terminal or command prompt and navigate to the directory containing folder project.
 
-3. Run the following command to execute the script: `node src/scripts/createFolders.js`
+3. Run the following command to execute the script: `node src/scripts/createDynamicfolder.js`
 
 
 ### Error Handling
 
-- The script checks if the "Project" folder already exists before attempting to create it. If the folder exists, it aborts further execution to prevent overwriting existing data.
+- The script checks if the parent folder specified in `folderStructure.json` already exists before attempting to create it. If the folder exists, it aborts further execution to prevent overwriting existing data.
+

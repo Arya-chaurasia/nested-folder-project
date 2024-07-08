@@ -1,0 +1,65 @@
+{
+    "name": "Project",
+    "folders": [
+      {
+        "name": "src",
+        "folders": [
+          {
+            "name": "components",
+            "files": [
+              {
+                "name": "Header.js",
+                "content": "// This is the header component"
+              },
+              {
+                "name": "Footer.js",
+                "content": "// This is the footer component"
+              }
+            ]
+          },
+          {
+            "name": "utils",
+            "files": [
+              {
+                "name": "helpers.js",
+                "content": "// Utility functions"
+              },
+              {
+                "name": "constants.js",
+                "content": "// Constants used across the project"
+              }
+            ]
+          }
+        ],
+        "files": [
+          {
+            "name": "index.js",
+            "content": "// Entry point of the application"
+          },
+          {
+            "name": "App.js",
+            "content": "// Main App component"
+          }
+        ]
+      },
+      {
+        "name": "docs",
+        "files": [
+          {
+            "name": "README.md",
+            "content": "# Project Documentation\nThis is the README file."
+          }
+        ]
+      },
+      {
+        "name": "tests",
+        "files": [
+          {
+            "name": "App.test.js",
+            "content": "// Tests for the App component"
+          }
+        ]
+      }
+    ]
+  }
+  
